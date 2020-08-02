@@ -1,4 +1,5 @@
 ﻿using Autofac.Extensions.DependencyInjection;
+using CleanArchitectureEShop.Infrastructure;
 using CleanArchitectureEShop.Infrastructure.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -7,12 +8,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Threading.Tasks;
 
 namespace CleanArchitectureEShop.Web
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
 
@@ -25,7 +27,7 @@ namespace CleanArchitectureEShop.Web
                     var context = services.GetRequiredService<AppDbContext>();
                     //                    context.Database.Migrate();
                     context.Database.EnsureCreated();
-                    SeedData.Initialize(services);
+                    await AppDbContextSeed.SeedAsync(context);
                 }
                 catch (Exception ex)
                 {
@@ -48,7 +50,6 @@ namespace CleanArchitectureEShop.Web
             {
                 logging.ClearProviders();
                 logging.AddConsole();
-                // logging.AddAzureWebAppDiagnostics(); add this if deploying to Azure
             });
         });
 

@@ -23,11 +23,5 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanArchitectureEShop.Infrastructure\CleanArchitectureEShop.Infrastructure.csproj" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Compile Update="Endpoints\ToDoItems\Update.NewToDoItemRequest.cs">
-      <DependentUpon>Update.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
 
 </Project>

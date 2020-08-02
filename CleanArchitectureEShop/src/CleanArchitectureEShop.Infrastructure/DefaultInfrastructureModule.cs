@@ -50,9 +50,6 @@ namespace CleanArchitectureEShop.Infrastructure
 
             builder.RegisterAssemblyTypes(_assemblies.ToArray())
                 .AsClosedTypesOf(typeof(IHandle<>));
-
-            builder.RegisterType<EmailSender>().As<IEmailSender>()
-                .InstancePerLifetimeScope();
         }
 
         private void RegisterDevelopmentOnlyDependencies(ContainerBuilder builder)

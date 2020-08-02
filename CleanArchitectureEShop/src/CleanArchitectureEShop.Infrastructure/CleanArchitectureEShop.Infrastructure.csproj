@@ -20,4 +20,8 @@
     <ProjectReference Include="..\CleanArchitectureEShop.Core\CleanArchitectureEShop.Core.csproj" />
     <ProjectReference Include="..\CleanArchitectureEShop.SharedKernel\CleanArchitectureEShop.SharedKernel.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Data\Config\" />
+  </ItemGroup>
 </Project>
