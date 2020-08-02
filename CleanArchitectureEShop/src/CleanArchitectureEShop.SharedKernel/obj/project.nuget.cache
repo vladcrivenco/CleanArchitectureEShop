@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+JI1og2xi0lcqncpFM44ksOTEn7ub53xG6StFsxVCmeIgkQSREsoDsQwKR4gfTlFBLba2AIFiKch9qijSWTh5w==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\CleanArchitectureEShop\\CleanArchitectureEShop\\src\\CleanArchitectureEShop.SharedKernel\\CleanArchitectureEShop.SharedKernel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vasile PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Vasile PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
